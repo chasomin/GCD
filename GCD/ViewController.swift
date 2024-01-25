@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         concurrentAsync()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        present(NASAViewController(), animated: true)
+    }
+    
     
 }
 
